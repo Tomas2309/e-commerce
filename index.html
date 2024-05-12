@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/logo-tienda.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,700;1,700&display=swap" rel="stylesheet">
     <title>E-commerce</title>
 </head>
 <body>
     <nav class="nav">
-        <p class="nav_name">SportSHOP</p>
+        <a href="/index.html" class="nav_name">SportSHOP</p>
         <div class="index_nav">
-            <a href="#" class="index_nav_a">Envios</a>
-            <a href="#" class="index_nav_a">Nosotros</a>
-            <a href="#" class="index_nav_a">Contacto</a>
+            <a href="#" class="index_nav_a" id="borde_envios">Envios</a>
+            <a href="#" class="index_nav_a" id="borde_nosotros">Nosotros</a>
+            <a href="#" class="index_nav_a" id="borde_contacto">Contacto</a>
         </div>
     </nav>
     <header class="index_header">
         <img src="/img/logo-tienda.svg" alt="Logo de la tienda" width="200rem">
         <div>
-            <label for="buscador"></label>
             <input type="text" name="buscador" class="buscador buscador-dimension" placeholder="Camisetas..." id="buscador" size="40">
             <input type="submit" class="logo-buscador buscador-dimension" value=" ">
         </div>
     </header>
     <main class="main">
         <section class="main_filtro">
-            <div>Futbol<input type="checkbox" name="opcion" id="futbol"></div>           
-            <div>Tenis<input type="checkbox" name="opcion" id=""></div>          
-            <div>Basket<input type="checkbox" name="opcion" id=""></div>     
-            <div>Voley<input type="checkbox" name="opcion" id=""></div>    
-            <div>Running<input type="checkbox" name="opcion" id=""></div>      
-            <div>Rugby<input type="checkbox" name="opcion" id=""></div>    
-            <div>Natacion<input type="checkbox" name="opcion" id=""></div>
+            <div>Futbol<input type="checkbox" name="opcion"></div>           
+            <div>Tenis<input type="checkbox" name="opcion"></div>          
+            <div>Basket<input type="checkbox" name="opcion"></div>     
+            <div>Voley<input type="checkbox" name="opcion"></div>    
+            <div>Running<input type="checkbox" name="opcion"></div>      
+            <div>Rugby<input type="checkbox" name="opcion"></div>    
+            <div>Natacion<input type="checkbox" name="opcion"></div>
             <div id="contenedor-enviar">
                 <input type="submit" class="boton" value="Filtrar">
             </div>
@@ -44,9 +45,13 @@
                 <div id="foto">
                     <img src="/img/fondo-cam-arg.jpg" width="90%" alt="nueva camiseta de Argentina">
                 </div>
-                <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WmTPdLvYHCU?si=l_WQhz9X9ER99wkB&amp; controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; muted=0; autoplay=1; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe> 
+                <div id="animacion">
+                    <div>
+                      <p id="animacion_first">Ultimo Lanzamiento</p>
+                    </div>
+                    <div>
+                        <p id="animacion_second" class="kanit-regular">Vestite como un campeón! La camiseta titular de Argentina. A lo largo de la historia del fútbol, la Albiceleste ha representado un juego y compromiso incomparables. Diseñada para hinchas, ofrece comodidad en todo momento</p>
+                    </div>
                 </div>
                 <a class="ya">Adquirila Ahora!</a>
             </article>
@@ -55,84 +60,84 @@
                 <div class="mas_vendidos">
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/camiseta_boca.png" alt="" width="90%" height="230">
+                            <img src="/img/productos/camiseta_boca.png" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Futbol</p>
+                        <p class="futbol">Futbol</p>
                         <h3>Camiseta Boca Juniors 2024</h3>
-                        <p>$50.000</p>
+                        <p class="precio">$50.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/camiseta_basket_warriors.jpg" alt="" width="90%" height="230">
+                            <img src="/img/productos/camiseta_basket_warriors.jpg" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Basket</p>
+                        <p class="basket">Basket</p>
                         <h3>Camiseta Warriors 2024</h3>
-                        <p>$80.000</p>
+                        <p class="precio">$80.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/camiseta_argentina.webp" alt="" width="90%" height="230">
+                            <img src="/img/productos/camiseta_argentina.webp" alt="" width="100%" height="100%">
                             <p></p>
                         </picture>
-                        <p>Futbol</p>
+                        <p class="futbol">Futbol</p>
                         <h3>Camiseta Argentina 2024</h3>
-                        <p>$65.000</p>
+                        <p class="precio">$65.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/pelota_baskey_wilson.webp" alt="" width="100%" height="230">
+                            <img src="/img/productos/pelota_baskey_wilson.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Basket</p>
+                        <p class="basket">Basket</p>
                         <h3>Pelota de Basket - Wilson</h3>
-                        <p>$25.000</p>
+                        <p class="precio">$25.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/raqueta_tenis_wilson.webp" alt="" width="100%" height="230">
+                            <img src="/img/productos/raqueta_tenis_wilson.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Tenis</p>
+                        <p class="tenis">Tenis</p>
                         <h3>Raqueta de Tenis - Wilson</h3>
-                        <p>$120.000</p>
+                        <p class="precio">$120.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/remera_tenis_adidas.webp" alt="" width="100%" height="230">
+                            <img src="/img/productos/remera_tenis_adidas.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Tenis</p>
+                        <p class="tenis">Tenis</p>
                         <h3>Remera de Tenis - Adidas</h3>
-                        <p>$35.000</p>
+                        <p class="precio">$35.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/pelota_voley_wilson.jpg" alt="" width="100%" height="230">
+                            <img src="/img/productos/pelota_voley.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Voley</p>
+                        <p class="voley">Voley</p>
                         <h3>Pelota de Voley - Wilson</h3>
-                        <p>$18.000</p>
+                        <p class="precio">$18.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/zapatillas_running.webp" alt="" width="100%" height="230">
+                            <img src="/img/productos/zapatillas_running.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Running</p>
+                        <p class="running">Running</p>
                         <h3>Zapatillas Adidas</h3>
-                        <p>$150.000</p>
+                        <p class="precio">$150.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/gorro_natacion.jpg" alt="" width="90%" height="230">
+                            <img src="/img/productos/gorro_natacion.jpg" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Natacion</p>
+                        <p class="natacion">Natacion</p>
                         <h3>Gorro de Natacion</h3>
-                        <p>$20.000</p>
+                        <p class="precio">$20.000</p>
                     </section>
                     <section class="item">
                         <picture>
-                            <img src="/img/productos/camiseta_rugby_allblacks.webp" alt="" width="90%" height="230">
+                            <img src="/img/productos/camiseta_rugby_allblacks.webp" alt="" width="100%" height="100%">
                         </picture>
-                        <p>Rugby</p>
+                        <p class="rugby">Rugby</p>
                         <h3>Camiseta All Blacks</h3>
-                        <p>$45.000</p>
+                        <p class="precio">$45.000</p>
                     </section>
                     <section class="item">
                         <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/">
@@ -140,36 +145,31 @@
                         </a>
                     </section>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatem eaque necessitatibus unde adipisci quaerat excepturi porro quasi? Quibusdam nobis labore temporibus eveniet enim atque officia laudantium voluptatibus recusandae quia.
-                Nisi perferendis hic ullam ipsam neque natus dolorum commodi enim libero incidunt labore, adipisci iure, obcaecati corporis molestiae! Reiciendis quisquam saepe assumenda tempora voluptates vitae! Autem minima odio impedit accusamus.
-                Dolore aut ut, fuga consequuntur assumenda quos, repellat sit fugiat officiis praesentium pariatur sed! Reiciendis asperiores velit excepturi dolore dolor at provident, nihil cum odio officia? Sunt eaque distinctio vitae.
-                Exercitationem maxime assumenda nisi quisquam quod possimus consequatur explicabo atque, corporis eaque tempora culpa nihil, et incidunt quasi deserunt inventore soluta expedita adipisci quos dignissimos minus numquam totam natus? Adipisci!
-                Iure dolore reiciendis harum, asperiores reprehenderit tenetur quod consequatur consectetur, sint porro ratione suscipit, id error neque sapiente non vero eaque temporibus dicta voluptates animi blanditiis officia quis! Odit, quia.
-                Cupiditate, adipisci sapiente? Culpa sapiente assumenda accusamus. Eum nobis fugit mollitia enim facilis sit architecto officiis, neque odio, in voluptates minima ipsa accusamus, doloribus vitae quis voluptatem cupiditate ducimus animi.
-                Quaerat earum, eum sint ipsa iusto ut natus omnis ipsum facilis, ratione nostrum. Sed, totam vero ullam odio molestiae explicabo necessitatibus rerum ex incidunt, eveniet saepe officia, error dolor iure?
-                Molestias, eius? Eaque, modi quae! Officia, ut ab sit sequi ad minima et. Sequi, corporis fugiat ab maxime quidem asperiores aliquam voluptatem consectetur similique voluptatum, debitis, amet inventore quos obcaecati.
-                Accusantium, amet molestias! Rerum, vitae eaque hic veritatis nobis totam corrupti consequatur similique nulla eos accusamus quidem, assumenda molestiae id? Esse explicabo dicta, maiores dolorem ipsum ratione sapiente repudiandae error.
-                Pariatur temporibus cum, totam, ipsam libero assumenda ad minus quod sequi saepe dolore ut eum aut blanditiis est minima modi! Sit unde voluptatum amet consequuntur vitae labore est perspiciatis reprehenderit.
-                Blanditiis doloremque repellendus suscipit maxime sint sit, offhicia earum laborum rem cumque reiciendis dicta. Id fugit accusantium expedita repudiandae sequi blanditiis eos, cupiditate voluptatem libero sed, laboriosam itaque porro laborum?
-                Cumque, labore ratione! Neque quisquam similique vel aliquam, nulla dolorem quo animi soluta non quod tempora fugit! Omnis eum molestiae, repellendus debitis odit enim autem accusamus doloremque, amet perferendis magnam?
-                Voluptatem tempora qui aspernatur quo magnam, iusto deleniti cupiditate laudantium laborum sint ut atque, animi eius aut quidem deserunt nihil adipisci at ex accusantium. Blanditiis facere maiores quis temporibus expedita.
-                Est deleniti cupiditate voluptatem dolores laborum dolorum officiis hic consequuntur id voluptate. Repellendus similique saepe quidem dolores modi possimus reprehenderit officiis, commodi harum accusamus repudiandae! Reiciendis pariatur amet voluptate corrupti!
-                Adipisci nihil ipsam provident tenetur, officia omnis esse sapiente illum impedit exercitationem quasi cum optio minus. Delectus dolor est quisquam quia dolorum dicta nobis voluptatem, minus animi aliquid possimus molestiae?
-                Nemo vitae ipsa quos totam mollitia numquam atque quas modi nulla inventore, quisquam eveniet doloribus. Architecto cumque esse nobis maxime maiores illum aut asperiores suscipit, vero, a inventore, assumenda impedit!
-                Obcaecati, doloremque, pariatur tenetur laboriosam eius ipsum autem expedita, asperiores non inventore praesentium suscipit quia at id reprehenderit quasi voluptatem et sequi porro modi. Voluptatum, repellendus earum. Aperiam, consectetur deleniti.
-                A natus vero rem animi ullam, facilis praesentium repellat veniam enim accusantium totam obcaecati reiciendis, libero delectus tempore ipsa aspernatur laboriosam alias saepe esse eveniet. Reprehenderit dolore odio delectus autem!
-                Itaque beatae, odio harum maxime consectetur error explicabo molestiae, autem alias architecto possimus aperiam mollitia voluptas magni soluta saepe nam accusamus, porro amet. Culpa voluptate at labore accusamus dolore quae?
-                Corporis iure aliquid provident libero accusantium ab eligendi sed possimus at, totam quisquam quaerat consequuntur assumenda. Et autem unde aliquid voluptates maxime, quia officiis aperiam, veniam similique, non eveniet libero.</p>
-            </div>
+            </div>    
         </section>
     </main>
-    <aside></aside>
-    <section></section>
+    <section class="order_mas_producto">
+        <a href="#" class="mas_productos">Mas Productos</a>
+    </section>
     <footer class="footer">
-        <p>eeeeee</p>
-        <p>eeeeee</p>
-        <p>eeeeee</p>
-        <p>eeeeee</p>
+        <div class="footer_order">
+            <a href="mailto:tomasignaguirre@gmail.com">
+                <img src="/img/gmail-svgrepo-com.svg" alt="" width="10%" height="10%">
+            </a>
+            <a href="https://wa.me/+5491155768026">
+                <img src="/img/whatsapp-whats-app-svgrepo-com.svg" alt="" width="10%" height="10%">
+            </a>
+            <a href="#">
+                <img src="/img/instagram-1-svgrepo-com.svg" alt=""  width="10%" height="10%">
+            </a>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d731.4326551977105!2d-58.38131765858264!3d-34.60360938783165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1715545201337!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>Carlos Pellegrini 425 Piso 9, CABA</p>
+            <p>Horacio de Atencion: Lunes a Sabados de 9hs - 19hs</p>
+        </div>
     </footer>
+    <script src="/js/index.js"></script>
 </body>
 </html>
