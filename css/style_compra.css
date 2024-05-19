@@ -1,0 +1,31 @@
+.compra_main{
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1/2;
+    padding: 10rem 0rem;
+}
+.compra_main img{
+    min-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    grid-column: 2/3;
+}
+#regresar{
+    padding: 2rem;
+    background-color: aquamarine;
+}
+.footer{
+    margin-top: 3rem;
+}
+@media only screen and (max-width:480px){
+    .compra_main{
+        font-size: 120%;
+        padding: 5rem 0rem;
+    }
+    #regresar{
+        padding:1rem 2rem ;
+    }
+}
