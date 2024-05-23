@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/imagenes, porductos/imagenFondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.nav_name{
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+}
+.index_nav{
+    display: inline-flex;
+}
+.index_nav_a{
+    margin: 0rem .5;
+    display: flex;
+    align-items: center;
+}
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .banner {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: darkblue;
+}
+
+.content {
+    min-height: 80px;
+    background: darkblue;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    background: darkblue;
+}
+.menu .navbar ul li a:hover {
+    color: chocolate;
+    background: darkblue;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu img {
+    height: 70px;
+    background-color: darkblue;
+    display: flex;
+}
+
+.productos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.productos a{
+    border: solid black;
+    margin: 30px 5px 5px 5px;
+
+    border-radius: 60px;
+}
+.caja-producto {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    transition: all .5s;
+    border: solid black .1px;
+}
+
+.productos a .caja-producto:hover {
+    transform: scale(1.07);
+}
+
+.productos a li {
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 1px 20px 1px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.productos a li:hover{
+    border: solid black 1px;
+    background-color: aliceblue;
+}
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+}
+.mapa{
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_right{
+    margin-bottom: 13rem;
+}
+.footer_order div{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+}
+.footer>p{
+    display: flex;
+    align-items: end;
+}
+@media only screen and (max-width:480px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .caja-producto {
+        height: 80%;
+        width: 80px;
+        border-radius: 10px;
+    }
+    .productos {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        padding-bottom: 20px;
+    }
+    .productos a li {
+        text-transform: capitalize;
+        font-size: 15px;
+        background-color: rgb(200, 213, 213);
+        padding:4px 0px;
+    }
+    .productos a li:hover{
+        border: 1px black solid;
+        background-color: white;
+        border-radius: 20%;
+    }
+    .footer{
+        display:grid;
+        grid-template: 3/1;
+        padding:1rem 1rem 0rem 1rem;
+    }
+    .footer_order img{
+        width: 5%;
+    }
+    .footer_right div{
+        margin-bottom: 0rem;
+    }
+    .footer_right{
+        margin-bottom: 0rem;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1.5fr;
+        column-gap: 1rem;
+    }
+    .footer_right p{
+        display: block;
+        margin: 0rem;
+    }
+    .footer>p{
+        display: flex;
+        justify-content: center;
+        padding-top: 0rem;
+        margin-top: 0rem;
+        margin: 0rem;
+    }
+    .mapa{
+        display:none;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .caja-producto {
+        height: 90%;
+        width: 90px;
+        border-radius: 10px;
+    }
+    .productos a li {
+        text-transform: capitalize;
+    }
+    .footer{
+        display:grid;
+        grid-template: 3/1;
+        padding:1rem 1rem 0rem 1rem;
+    }
+    .footer_order img{
+        width: 5%;
+    }
+    .footer_right div{
+        margin-bottom: 0rem;
+    }
+    .footer_right{
+        margin-bottom: 0rem;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1.5fr;
+        column-gap: 1rem;
+    }
+    .footer_right p{
+        display: block;
+        margin: 0rem;
+    }
+    .footer>p{
+        display: flex;
+        justify-content: center;
+        padding-top: 0rem;
+        margin-top: 0rem;
+        margin: 0rem;
+    }
+    .mapa{
+        display:none;
+    }
+
+}
