@@ -176,7 +176,7 @@ nav a:hover {
     transform: scale(1.07);
 }
 
-.productos a li {
+.productos a p {
     text-align: center;
     color: black;
     border-radius: 20px;
@@ -188,7 +188,7 @@ nav a:hover {
     align-items: center;
     text-transform: uppercase;
 }
-.productos a li:hover{
+.productos a p:hover{
     border: solid black 1px;
     background-color: aliceblue;
 }
@@ -209,6 +209,9 @@ nav a:hover {
 .footer_order div{
     margin-bottom: 2rem;
     border-bottom: 1px solid white;
+}
+.footer_order{
+    max-width: 33%;
 }
 .footer>p{
     display: flex;
@@ -240,13 +243,13 @@ nav a:hover {
         padding: 5px;
         padding-bottom: 20px;
     }
-    .productos a li {
+    .productos a p {
         text-transform: capitalize;
         font-size: 15px;
         background-color: rgb(200, 213, 213);
         padding:4px 0px;
     }
-    .productos a li:hover{
+    .productos a p:hover{
         border: 1px black solid;
         background-color: white;
         border-radius: 20%;
@@ -255,9 +258,10 @@ nav a:hover {
         display:grid;
         grid-template: 3/1;
         padding:1rem 1rem 0rem 1rem;
+        font-size: 50%;
     }
-    .footer_order img{
-        width: 5%;
+    .footer_order{
+        max-width: 33%;
     }
     .footer_right div{
         margin-bottom: 0rem;
@@ -305,16 +309,13 @@ nav a:hover {
         width: 90px;
         border-radius: 10px;
     }
-    .productos a li {
+    .productos a p {
         text-transform: capitalize;
     }
     .footer{
         display:grid;
         grid-template: 3/1;
         padding:1rem 1rem 0rem 1rem;
-    }
-    .footer_order img{
-        width: 5%;
     }
     .footer_right div{
         margin-bottom: 0rem;

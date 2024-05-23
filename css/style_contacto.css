@@ -141,6 +141,9 @@ form label {
     margin-bottom: 2rem;
     border-bottom: 1px solid white;
 }
+.footer_order{
+    max-width: 33%;
+}
 .footer>p{
     display: flex;
     align-items: end;
@@ -167,8 +170,8 @@ form label {
         grid-template: 3/1;
         padding:1rem 1rem 0rem 1rem;
     }
-    .footer_order img{
-        width: 5%;
+    .footer_order{
+        max-width: 33%;
     }
     .footer_right div{
         margin-bottom: 0rem;
@@ -211,9 +214,7 @@ form label {
         display:grid;
         grid-template: 3/1;
         padding:1rem 1rem 0rem 1rem;
-    }
-    .footer_order img{
-        width: 5%;
+        font-size: 50%;
     }
     .footer_right div{
         margin-bottom: 0rem;
